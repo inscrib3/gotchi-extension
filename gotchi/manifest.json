@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Gotchi",
+    "description": "Empower your browser with a Gotchi",
+    "version": "0.1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "gotchi.png"
+    },
+    "file_browser_handlers": [
+      {
+        "id": "files",
+        "default_title": "Inscribe your Files",
+        "file_filters": [
+          "filesystem:*.*"
+        ]
+      }
+    ],
+    "permissions" : [
+      "fileBrowserHandler"
+    ]
+}

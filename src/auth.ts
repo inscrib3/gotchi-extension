@@ -1,0 +1,22 @@
+import { constants } from "./constants"
+import { render as renderGotchi } from "./gotchi"
+
+export const render = (element: HTMLElement) => {
+    element.innerHTML = `<div id="container">
+    <img src="logo.png" width="300" />
+    <input type="text" id="gotchi" placeholder="Gotchi ID" />
+    <button type="submit" id="submit">Play</button>
+    <hr />
+    <button type="button" id="mint">Mint</button>
+    </div>`
+  
+    document.getElementById('submit')!.onclick = () => {
+      const gotchi = (<HTMLInputElement>document.getElementById(constants.keys.gotchi)).value
+      localStorage.setItem(constants.keys.gotchi, gotchi)
+      renderGotchi(element)
+    }
+
+    document.getElementById('mint')!.onclick = () => {
+      window.open(constants.ordinals.minting, '_blank')
+    }
+}
