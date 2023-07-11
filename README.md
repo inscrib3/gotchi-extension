@@ -1,4 +1,4 @@
-# Gotci Extension
+# Gotchi Extension
 
 1. Clone Repo or Download Zip and extract
 2. Open Chrome and go to `chrome://extensions/`
