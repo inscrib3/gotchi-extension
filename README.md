@@ -12,11 +12,11 @@ If you pull down new changes or make a change to the extension's files locally, 
 
 We have five tabs
 
-1 - Gotchi (your/others ordinal id)
-2 - Gotchi Collection (https://ordinals.com/content/1a3dc6a44ea3d88a10e5761cc5fb612d85890cc3a40a5bb9faae0d404ed9b5f5i0)
-3 - Gotchi Mint (https://ordiscan.com/content/15118010ced3cace4b48c6e5a52e3962df0ede657e9bde82cc8e26efa1823cc5i0)
-4 - Inscrib3 (inside the extension for now soon on chain)
-5 - N3xt (the next step)
+- Gotchi (your/others ordinal id)
+- Gotchi Collection (https://ordinals.com/content/1a3dc6a44ea3d88a10e5761cc5fb612d85890cc3a40a5bb9faae0d404ed9b5f5i0)
+- Gotchi Mint (https://ordiscan.com/content/15118010ced3cace4b48c6e5a52e3962df0ede657e9bde82cc8e26efa1823cc5i0)
+- Inscrib3 (inside the extension for now soon on chain)
+- N3xt (the next step)
 
 ### Gotchi
 
