@@ -13,6 +13,7 @@ export const render = (element: HTMLElement) => {
     document.getElementById('submit')!.onclick = () => {
       const gotchi = (<HTMLInputElement>document.getElementById(constants.keys.gotchi)).value
       localStorage.setItem(constants.keys.gotchi, gotchi)
+      console.log(JSON.stringify({ gotchiId: gotchi, action: 'play attempt' }))
       renderGotchi(element)
     }
 

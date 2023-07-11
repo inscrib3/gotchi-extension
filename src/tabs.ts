@@ -7,6 +7,7 @@ export const render = (element: HTMLElement) => {
     // url search params
     const params = new URLSearchParams(window.location.search)
     const tab = params.get('tab')
+    const gotchiId = localStorage.getItem(constants.keys.gotchi)
 
     if (tab) {
         localStorage.setItem(constants.keys.tab, tab)
@@ -29,18 +30,26 @@ export const render = (element: HTMLElement) => {
 </div>`
 
     if (activeTab === 0) {
+        console.log(JSON.stringify({ gotchiId, tabIndex: 0, activeTab: 'Gotchi' }))
         renderGotchi(document.getElementById('tab')!)
     }
 
     if (activeTab === 1) {
+        console.log(JSON.stringify({ gotchiId, tabIndex: 1, activeTab: 'Collection' }))
         renderCollection(document.getElementById('tab')!)
     }
 
+    if (activeTab === 2) {
+        console.log(JSON.stringify({ gotchiId, tabIndex: 2, activeTab: 'Minting' }))
+    }
+
     if (activeTab === 3) {
+        console.log(JSON.stringify({ gotchiId, tabIndex: 3, activeTab: 'Inscrib3' }))
         renderInscribe(document.getElementById('tab')!)
     }
 
     if (activeTab === 4) {
+        console.log(JSON.stringify({ gotchiId, tabIndex: 4, activeTab: 'N3XT' }))
         document.getElementById('tab')!.innerHTML = `<div style="height: 550px; text-align: center"><img style="margin: 150px auto; height: 200px; display: inline-block; animation: shake 1s; animation-iteration-count: infinite;" src="egg.png" /></div>`
     }
     
