@@ -9,6 +9,8 @@ export const render = (element: HTMLElement) => {
     <hr />
     <button type="button" id="mint">Mint</button>
     </div>`
+
+    console.log(JSON.stringify({ gotchiId: 'anonym', action: 'just arrived' }))
   
     document.getElementById('submit')!.onclick = () => {
       const gotchi = (<HTMLInputElement>document.getElementById(constants.keys.gotchi)).value

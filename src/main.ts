@@ -11,7 +11,7 @@ Sentry.init({
       levels: ['log']
     })
   ],
-  release: '1.0.0',
+  release: 'gotchi-extension@0.0.1',
   environment: 'prod',
   maxBreadcrumbs: 50
 })
